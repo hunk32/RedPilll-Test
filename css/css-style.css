@@ -44,13 +44,12 @@ span {
   font-size: 1.25rem;
   font-weight: 700;
   padding-bottom: 1rem;
-  -webkit-transition: 0.8s cubic-bezier(0.25, 1, 0.5, 1);
   transition: 0.8s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 h1 {
   color: #000a38;
-  font-size: 4.204375rem;
+  font-size: 4.2rem;
 }
 
 .form_items li {
@@ -68,8 +67,7 @@ h1 {
   height: 1.7rem;
   top: 50%;
   left: 14px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   position: absolute;
   border-radius: 100%;
   border: 2px solid #e2e2e2;
@@ -78,8 +76,7 @@ h1 {
   content: "";
   top: 48%;
   left: 18px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   position: absolute;
   color: #ffc533;
   font-size: 1.2rem;
@@ -106,7 +103,6 @@ h1 {
   background-color: #ffc533;
   margin-right: 0.625rem;
   margin-bottom: 2rem;
-  -webkit-transition: 0.8s cubic-bezier(0.25, 1, 0.5, 1);
   transition: 0.8s cubic-bezier(0.25, 1, 0.5, 1);
 }
 .f_btn:hover {
@@ -156,28 +152,23 @@ img {
 }
 
 .animate_50ms {
-  -webkit-animation-delay: 50ms;
-          animation-delay: 50ms;
+  animation-delay: 50ms;
 }
 
 .animate_100ms {
-  -webkit-animation-delay: 100ms;
-          animation-delay: 100ms;
+  animation-delay: 100ms;
 }
 
 .animate_150ms {
-  -webkit-animation-delay: 150ms;
-          animation-delay: 150ms;
+  animation-delay: 150ms;
 }
 
 .animate_200ms {
-  -webkit-animation-delay: 200ms;
-          animation-delay: 200ms;
+  animation-delay: 200ms;
 }
 
 .animate_250ms {
-  -webkit-animation-delay: 250ms;
-          animation-delay: 250ms;
+  animation-delay: 250ms;
 }
 
 @media (min-width: 1500px) {
@@ -185,17 +176,9 @@ img {
     max-width: 1510px;
   }
 }
-/* ==================================================
-*   01 - media screen and (max-width: 1500px)
-*   02 - media screen and (max-width: 1400px)
-*	03 - media screen and (max-width: 1200px)
-*	04 - media screen and (max-width: 992px)
-*	05 - media screen and (max-width: 768px)
-*	06 - media screen and (max-width: 576px)
-*	07 - media screen and (max-width: 380px)
-*   XX-Large devices (larger desktops)
-*   No media query since the xxl breakpoint has no upper bound on its width
-================================================== */
+
+/* Media Queries for Responsiveness */
+
 @media screen and (max-width: 1499.98px) {
   .step_progress .step {
     width: 12rem;
@@ -338,143 +321,9 @@ Version     : 1.0.0
 Author      : jthemes (https://themeforest.net/user/jthemes)
 */
 /* ====== Table of content End =====*/
+
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap");
-/* Default transition start*/
-/*Default transition end*/
-.wrapper {
-  width: 100%;
-  min-height: 100vh;
-  overflow: hidden;
-  position: relative;
-}
-
-.row {
-  margin-top: 10rem;
-}
-
-.check_mark_img img {
-  width: 20rem;
-  height: auto;
-}
-
-.sub_title span {
-  color: #090909;
-  font-size: 1.25rem;
-}
-
-.title h3 {
-  color: #1b1b1b;
-  font-size: 2.625rem;
-}
-.title h1 {
-  width: 50%;
-  height: auto;
-  top: 180px;
-  left: 380px;
-  font-size: 4.375rem;
-  font-weight: 700;
-  font-family: "Oswald", sans-serif;
-}
-
-body {
-  color: #000000;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.65;
-  font-style: normal;
-  font-display: swap;
-  font-family: "Jost", sans-serif;
-  background-color: #f2f2f2;
-}
-
-a,
-button,
-input {
-  cursor: pointer;
-  display: inline-block;
-  text-decoration: none;
-}
-a:hover,
-button:hover,
-input:hover {
-  text-decoration: none;
-}
-a:focus,
-button:focus,
-input:focus {
-  outline: none;
-}
-
-ul > li {
-  list-style: none;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  color: #000000;
-  font-weight: 700;
-}
-
-img {
-  height: auto;
-  max-width: 100%;
-}
-
-@-webkit-keyframes upDown {
-  0% {
-    -webkit-transform: translateY(10px);
-            transform: translateY(10px);
-  }
-  100% {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
-  }
-}
-
-@keyframes upDown {
-  0% {
-    -webkit-transform: translateY(10px);
-            transform: translateY(10px);
-  }
-  100% {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
-  }
-}
-@-webkit-keyframes rightLeft {
-  0% {
-    -webkit-transform: translateX(15px);
-            transform: translateX(15px);
-  }
-  100% {
-    -webkit-transform: translateX(-15px);
-            transform: translateX(-15px);
-  }
-}
-@keyframes rightLeft {
-  0% {
-    -webkit-transform: translateX(15px);
-            transform: translateX(15px);
-  }
-  100% {
-    -webkit-transform: translateX(-15px);
-            transform: translateX(-15px);
-  }
-}
-/* css animations - end
-================================================== */
-/* transition - start ============================ */
-a,
-button {
-  -webkit-transition: 0.6s cubic-bezier(0.25, 1, 0.5, 1);
-  transition: 0.6s cubic-bezier(0.25, 1, 0.5, 1);
-}
-
-@media (min-width: 1500px) {
-  .container {
-    max-width: 1510px;
-  }
-}
 
 #customAlert {
   position: fixed;
@@ -499,7 +348,7 @@ button {
 }
 
 #alertOkButton {
-  background-color: #4CAF50; /* Green */
+  background-color: #4CAF50;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -509,9 +358,85 @@ button {
 }
 
 #alertOkButton:hover {
-  background-color: #45a049; /* Darker green on hover */
+  background-color: #d6c94f;
 }
 
 #alertOkButton:focus {
-  outline: none; /* Remove default focus outline */
+  outline: none;
+}
+
+
+
+
+
+
+/* Image and Title Container */
+.shap_content {
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 600px; /* Control the max width of the container */
+}
+
+.shap_content img {
+  width: 100%; /* Makes the image responsive */
+  max-width: 1500px; /* Prevents the image from getting too big */
+  height: auto;
+  display: block;
+  padding-top: 10%;
+  margin: 0 auto; /* Centers the image horizontally */
+}
+
+.title {
+  position: absolute;
+  top: 80%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: right;
+}
+
+.title h1 {
+  font-size: 3rem;
+  color: #030303; /* White color for the text */
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds a shadow for readability */
+}
+
+.result {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+  margin-top: 15px;
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+  .title h1 {
+      font-size: 1.8rem; /* Slightly smaller text on tablets */
+  }
+
+  .result {
+      font-size: 1.2rem; /* Smaller result text */
+  }
+
+  .shap_content img {
+      max-width: 80%; /* Makes the image smaller on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .title h1 {
+      font-size: 1.5rem; /* Further reduce text size on smaller screens */
+  }
+
+  .result {
+      font-size: 1rem; /* Smaller result text */
+  }
+
+  .shap_content img {
+      max-width: 90%; /* Makes the image even smaller on very small screens */
+  }
 }
